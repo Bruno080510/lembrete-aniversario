@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Bruno080510.github.io/lembrete-aniversario",
   "name": "projeto",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +15,9 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +39,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",
+    "gh-pages": "^5.0.0",
     "vite": "^4.4.7"
   }
 }
